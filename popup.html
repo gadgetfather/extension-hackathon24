@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scraper & Summary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 400px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    h3 {
+      margin-top: 20px;
+    }
+    pre {
+      background: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .hidden {
+      display: none;
+    }
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <button id="scrapeButton">Scrape & Summarize</button>
+  </div>
+  <h3>Scraped Data:</h3>
+  <pre id="data">No data yet. Click "Scrape & Summarize" to get started.</pre>
+  <h3>Summary:</h3>
+  <pre id="summary">Summary will appear here.</pre>
+  <div class="center hidden" id="timesheetDiv">
+    <button id="addToTimesheetButton">Add to Timesheet</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
